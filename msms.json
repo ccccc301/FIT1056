@@ -1,0 +1,110 @@
+{
+    "students": [
+        {
+            "id": 1,
+            "name": "Alice Johnson"
+        },
+        {
+            "id": 2,
+            "name": "Bob Williams"
+        }
+    ],
+    "teachers": [
+        {
+            "id": 1,
+            "name": "Dr. Evelyn Keys",
+            "speciality": "Piano"
+        },
+        {
+            "id": 2,
+            "name": "Mr. David Fret",
+            "speciality": "Guitar"
+        }
+    ],
+    "courses": [
+        {
+            "id": 101,
+            "name": "Beginner Piano",
+            "instrument": "Piano",
+            "teacher_id": 1,
+            "enrolled_student_ids": [],
+            "lessons": [
+                {
+                    "lesson_id": 1,
+                    "day": "Monday",
+                    "start_time": "16:00",
+                    "room": "Room A"
+                },
+                {
+                    "lesson_id": 2,
+                    "day": "Wednesday",
+                    "start_time": "16:00",
+                    "room": "Room A"
+                }
+            ]
+        },
+        {
+            "id": 102,
+            "name": "Acoustic Guitar Fundamentals",
+            "instrument": "Guitar",
+            "teacher_id": 2,
+            "enrolled_student_ids": [
+                2,
+                1
+            ],
+            "lessons": [
+                {
+                    "lesson_id": 3,
+                    "day": "Tuesday",
+                    "start_time": "17:00",
+                    "room": "Room C"
+                }
+            ]
+        },
+        {
+            "id": 103,
+            "name": "Intermediate Piano",
+            "instrument": "Piano",
+            "teacher_id": 1,
+            "enrolled_student_ids": [
+                1
+            ],
+            "lessons": []
+        }
+    ],
+    "attendance": [
+        {
+            "student_id": 1,
+            "course_id": 101,
+            "timestamp": "2025-07-14T15:58:30.123456"
+        },
+        {
+            "student_id": 2,
+            "course_id": 102,
+            "timestamp": "2025-07-14T16:02:45.654321"
+        },
+        {
+            "student_id": 1,
+            "course_id": 101,
+            "timestamp": "2025-09-06T23:06:27.371052"
+        },
+        {
+            "student_id": 1,
+            "course_id": 102,
+            "timestamp": "2025-09-06T23:06:52.290072"
+        },
+        {
+            "student_id": 1,
+            "course_id": 103,
+            "timestamp": "2025-09-06T23:24:23.258126"
+        },
+        {
+            "student_id": 1,
+            "course_id": 102,
+            "timestamp": "2025-09-06T23:52:05.150994"
+        }
+    ],
+    "next_student_id": 3,
+    "next_teacher_id": 3,
+    "next_course_id": 104
+}
